@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ plant.name }} Details</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <h1 style="text-align: center;">{{ plant.name }}</h1>
+
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+        <img src="{{ url_for('static', path=plant.image) }}" alt="{{ plant.name }}" style="max-width: 300px; margin-right: 20px; border-radius: 10px;">
+        <div>
+            <p><strong>Description:</strong> {{ plant.description }}</p>
+            <p><strong>Price:</strong> €{{ plant.price }}</p>
+            <a href="/" style="padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px;">Back to List</a>
+        </div>
+    </div>
+</body>
+</html>

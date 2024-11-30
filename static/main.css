@@ -1,0 +1,82 @@
+.plant-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.plant-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+
+.plant-image {
+  max-width: 150px; /* Largeur maximale */
+  height: auto; /* Conserve les proportions */
+  margin: 10px auto;
+}
+
+
+.plant-item h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.plant-item .price {
+  color: #10a37f;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+body {
+  background-color: #DFFFD6; /* Vert pomme */
+  color: #333; /* Couleur sombre pour le texte pour un bon contraste */
+  font-family: Arial, sans-serif; /* Police moderne et lisible */
+  margin: 0;
+  padding: 0;
+}
+
+.add-to-cart {
+  background-color: #10a37f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem; /* Taille du texte */
+  text-align: center; /* Centrer le texte horizontalement */
+  margin-top: 20px; /* Espacement en haut */
+  color: #333; /* Couleur du texte */
+  font-family: Arial, sans-serif; /* Police lisible */
+}
+
+form input[type="text"] {
+  font-size: 1rem;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #10a37f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+div {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
